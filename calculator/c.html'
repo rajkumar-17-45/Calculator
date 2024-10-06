@@ -1,0 +1,245 @@
+       let displaysev = document.getElementById("seven")
+    displaysev.addEventListener('click', displayseven)
+
+    let displayeig = document.getElementById("eight")
+    displayeig.addEventListener('click', displayeight)
+
+    let displaynin = document.getElementById("nine")
+    displaynin.addEventListener('click', displaynine)
+
+    let displayfr = document.getElementById("four")
+    displayfr.addEventListener('click', displayfour)
+
+    let displayfiv = document.getElementById("five")
+    displayfiv.addEventListener('click', displayfive)
+
+    let displaysx = document.getElementById("six")
+    displaysx.addEventListener('click', displaysix)
+
+    let displayon = document.getElementById("num-one")
+    displayon.addEventListener('click', displayone)
+
+    let displayto = document.getElementById("two")
+    displayto.addEventListener('click', displaytwo)
+
+    let displaytree = document.getElementById("three")
+    displaytree.addEventListener('click', displaythree)
+
+    let displaydbzero = document.getElementById("add-two-zero")
+    displaydbzero.addEventListener('click', displaytwozero)
+
+    let displaytozro = document.getElementById("zero")
+    displaytozro.addEventListener('click', displayzero)
+
+    let displaydt = document.getElementById("dot")
+    displaydt.addEventListener('click', displaydot)
+
+    function displayseven() {
+      document.getElementById("result").innerHTML += "7"
+      success();
+
+    }
+    function displayeight() {
+      document.getElementById("result").innerHTML += "8"
+      success();
+
+    }
+    function displaynine() {
+      document.getElementById("result").innerHTML += "9"
+      success();
+
+    }
+    function displayfour() {
+      document.getElementById("result").innerHTML += "4"
+      success();
+    }
+    function displayfive() {
+      document.getElementById("result").innerHTML += "5"
+      success();
+    }
+    function displaysix() {
+      document.getElementById("result").innerHTML += "6"
+      success();
+
+    }
+    function displayone() {
+      document.getElementById("result").innerHTML += "1"
+      success();
+
+    }
+    function displaytwo() {
+      document.getElementById("result").innerHTML += "2"
+      console.log("2")
+      success();
+
+    }
+    function displaythree() {
+      document.getElementById("result").innerHTML += "3"
+
+      console.log("3")
+      success();
+
+    }
+    function displaytwozero() {
+      document.getElementById("result").innerHTML += '00'
+      success();
+
+    }
+    function displayzero() {
+      document.getElementById("result").innerHTML += 0;
+      success();
+
+    }
+    function displaydot() {
+      document.getElementById("result").innerHTML += "."
+      success();
+
+    }
+    let a = document.getElementById("result")
+    let c = a.innerHTML
+
+    function success() {
+
+      let a = document.getElementById("result")
+      let c = a.innerHTML
+      let h = c;
+
+      // let len1=c.length;
+      // console.log(len1)
+
+      k = c.replace(/%/g, "/100*")
+      u = k.replace("X", "*")
+
+      let rslt = eval(u)
+      console.log(rslt)
+      document.getElementById("bird").innerHTML = rslt;
+    }
+
+
+    let displayclr = document.getElementById("clear")
+    displayclr.addEventListener('click', displayclear)
+
+    function displayclear() {
+      firstclear();
+      secondclear();
+
+    }
+    function firstclear() {
+      document.getElementById("result").innerHTML = "";
+    }
+    function secondclear() {
+      document.getElementById("bird").innerHTML = "";
+    }
+
+    let displayper = document.getElementById("percentage")
+    displayper.addEventListener('click', displaypercentage)
+
+    function displaypercentage() {
+      document.getElementById("result").innerHTML += "%"
+    }
+    let displaydiv = document.getElementById("divide")
+    displaydiv.addEventListener('click', displaydivide)
+
+    function displaydivide() {
+      document.getElementById("result").innerHTML += "/"
+    }
+
+    let displaymtply = document.getElementById("multiply")
+    displaymtply.addEventListener('click', displaymultiply)
+
+    function displaymultiply() {
+      document.getElementById("result").innerHTML += "X"
+    }
+    let displaysbrt = document.getElementById("subtraction")
+    displaysbrt.addEventListener('click', displaysubtract)
+
+    function displaysubtract() {
+      document.getElementById("result").innerHTML += "-"
+    }
+
+    let o = document.getElementById("add")
+    o.addEventListener('click', displayaddition)
+
+    function displayaddition() {
+      document.getElementById("result").innerHTML += "+"
+    }
+    let lo = document.getElementById("equal-to")
+    lo.addEventListener('click', alterresult)
+    function alterresult() {
+      document.getElementById("result").innerHTML = "";
+      let alterres = document.getElementById("bird")
+      let printres = alterres.innerHTML
+      document.getElementById("result").innerHTML += printres;
+      document.getElementById("bird").innerHTML = ""
+    }
+    let displayequal = document.getElementById("subtraction")
+    displayequal.addEventListener('click', displayequal)
+
+    let z = document.getElementById("clear-one-value back")
+    z.addEventListener('click', clearone)
+    function clearone() {
+      let a = document.getElementById("result")
+      let c = a.innerHTML
+
+         let w = c.length;
+      
+      }
+
+
+
+    window.addEventListener("keyup", function (event) {
+      let rlt = event.key;
+      if (rlt == 1) {
+        displayone()
+      }
+      if (rlt == 2) {
+        displaytwo()
+      }
+      if (rlt == 3) {
+        displaythree()
+      }
+      if (rlt == 4) {
+        displayfour()
+      }
+      if (rlt == 5) {
+        displayfive()
+      }
+      if (rlt == 6) {
+        displaysix()
+      }
+      if (rlt == 7) {
+        displayseven()
+      }
+      if (rlt == 8) {
+        displayeight()
+      }
+      if (rlt == 9) {
+        displaynine()
+      }
+      if (rlt == '*') {
+        displaymultiply()
+      }
+      if (rlt == '/') {
+        displaydivide()
+      }
+      if (rlt == '-') {
+        displaysubtract()
+      }
+      if (rlt == '+') {
+        displayaddition()
+      }
+      if (rlt == 0) {
+        displayzero()
+      }
+      if (rlt == 'Backspace') {
+        clearone()
+      }
+      if (rlt == '=') {
+        alterresult()
+
+      }
+
+
+    }, true);
+
+ */  </script>

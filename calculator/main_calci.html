@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+
+
+    /* @media only screen and (max-width:500px)  {.container {
+            width: 350px;
+            height: 650px;
+            background-color: black;
+            color:white;
+            border-radius: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }}
+        @media only screen and (min-width:500px)  {.container {
+            width: 350px;
+            height: 790px;
+            background-color: black;
+            color:white;
+            border-radius: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }} */
+
+    .container .cot {
+
+      position: relative;
+      top: 130px;
+
+    }
+
+
+    .container .cot button {
+      background-color: rgb(25, 23, 23);
+      margin-top: 15px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      border: 0px;
+      color: beige;
+      font-size: 28px;
+
+
+    }
+
+    .container {
+      width: 350px;
+      height: 700px;
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+
+    .container .cot button {
+      background-color: rgb(25, 23, 23);
+      margin-top: 15px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      border: 0px;
+      color: beige;
+      font-size: 28px;
+
+
+    }
+
+    .container .cot .one {
+      margin-left: 25px;
+      margin-top: 19px;
+
+
+    }
+
+    .container .cot .first .hel {
+
+      font-size: xx-large
+    }
+
+    .material-symbols-outlined {
+      padding: 17px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .icons .icons2 {
+      display: flex;
+    }
+
+    .container .cot .mul {
+      font-size: 20px;
+    }
+
+    /* <style> */
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
+    .container .cot .hel {
+      background-color: rgb(99, 91, 91);
+    }
+
+    .container .cot .equal {
+      background-color: rgb(255, 148, 17);
+    }
+
+    .container .cot .c {
+      font-size: 18px;
+    }
+
+    .container .cot .on {
+      margin-left: 15px;
+    }
+
+    #result {
+      /* background-color:blue;
+          position: relative;
+          top:160px;
+          left:150px;
+          font-size:40px;
+          text-align: ;
+        */
+      position: relative;
+      top: 70px;
+
+      text-align: right;
+      padding-right: 20px;
+      font-size: 40px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      width: 326px;
+      height: 50px;
+
+    }
+
+    #result::-webkit-scrollbar {
+      display: none;
+    }
+
+    #bird {
+      position: relative;
+      top: 130px;
+
+      text-align: right;
+      padding-right: 20px;
+      font-size: 40px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      width: 326px;
+      height: 50px;
+
+    }
+
+    #bird::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="icons">
+      <div class="icons1">
+        <span class="material-symbols-outlined">
+          close_fullscreen
+        </span>
+      </div>
+      <div class="icons2">
+        <div class="icon-one"><span class="material-symbols-outlined">
+            calculate
+          </span>
+        </div>
+        <div class="icon-two"> <span class="material-symbols-outlined">
+            view_cozy
+          </span>
+        </div>
+        <div class="icon-three"><span class="material-symbols-outlined">
+            more_vert
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="result" class="reslt">
+
+    </div>
+    <div id="bird">
+
+    </div>
+    <div class="cot">
+      <div class="first">
+        <button class="f hel c on" id="clear">C</button>
+        <button class="f one hel" id="percentage">%</button>
+        <button class="f one hel" id="clear-one-value"><span class="material-symbols-outlined ">
+            backspace</span></button>
+        <button class="f one hel" id="divide"><span style='font-size:px;'>&#247;</span></button>
+      </div>
+
+      <div class="second">
+        <button class="s on" id="seven">7</button>
+        <button class="s one" id="eight">8</button>
+        <button class="s one" id="nine">9</button>
+        <button class="s one mul hel" id="multiply">X</button>
+      </div>
+
+      <div clas="third">
+        <button class="t on" id="four">4</button>
+        <button class="t one" id="five">5</button>
+        <button class="t one" id="six">6</button>
+        <button class="t one hel" id="subtraction">-</button>
+      </div>
+
+      <div class="fourth">
+        <button class="fo on" id="num-one">1</button>
+        <button class="fo one" id="two">2</button>
+        <button class="fo one" id="three">3</button>
+        <button class="fo one hel " id="add">+</button>
+      </div>
+
+      <div class="fifth">
+        <button class="fo on" id="add-two-zero">00</button>
+        <button class="fo one" id="zero">0</button>
+        <button class="fo one" id="dot">.</button>
+        <button class="fo one hel equal" id="equal-to">=</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    let displaysev = document.getElementById("seven")
+    displaysev.addEventListener('click', displayseven)
+
+    let displayeig = document.getElementById("eight")
+    displayeig.addEventListener('click', displayeight)
+
+    let displaynin = document.getElementById("nine")
+    displaynin.addEventListener('click', displaynine)
+
+    let displayfr = document.getElementById("four")
+    displayfr.addEventListener('click', displayfour)
+
+    let displayfiv = document.getElementById("five")
+    displayfiv.addEventListener('click', displayfive)
+
+    let displaysx = document.getElementById("six")
+    displaysx.addEventListener('click', displaysix)
+
+    let displayon = document.getElementById("num-one")
+    displayon.addEventListener('click', displayone)
+
+    let displayto = document.getElementById("two")
+    displayto.addEventListener('click', displaytwo)
+
+    let displaytree = document.getElementById("three")
+    displaytree.addEventListener('click', displaythree)
+
+    let displaydbzero = document.getElementById("add-two-zero")
+    displaydbzero.addEventListener('click', displaytwozero)
+
+    let displaytozro = document.getElementById("zero")
+    displaytozro.addEventListener('click', displayzero)
+
+    let displaydt = document.getElementById("dot")
+    displaydt.addEventListener('click', displaydot)
+
+    function displayseven() {
+      document.getElementById("result").innerHTML += "7"
+      success();
+
+    }
+    function displayeight() {
+      document.getElementById("result").innerHTML += "8"
+      success();
+
+    }
+    function displaynine() {
+      document.getElementById("result").innerHTML += "9"
+      success();
+
+    }
+    function displayfour() {
+      document.getElementById("result").innerHTML += "4"
+      success();
+    }
+    function displayfive() {
+      document.getElementById("result").innerHTML += "5"
+      success();
+    }
+    function displaysix() {
+      document.getElementById("result").innerHTML += "6"
+      success();
+
+    }
+    function displayone() {
+      document.getElementById("result").innerHTML += "1"
+      success();
+
+    }
+    function displaytwo() {
+      document.getElementById("result").innerHTML += "2"
+      console.log("2")
+      success();
+
+    }
+    function displaythree() {
+      document.getElementById("result").innerHTML += "3"
+
+      console.log("3")
+      success();
+
+    }
+    function displaytwozero() {
+      document.getElementById("result").innerHTML += '00'
+      success();
+
+    }
+    function displayzero() {
+      document.getElementById("result").innerHTML += 0;
+      success();
+
+    }
+    function displaydot() {
+      document.getElementById("result").innerHTML += "."
+      success();
+
+    }
+
+
+    let displayclr = document.getElementById("clear")
+    displayclr.addEventListener('click', displayclear)
+
+    function displayclear() {
+      firstclear();
+      secondclear();
+
+    }
+    function firstclear() {
+      document.getElementById("result").innerHTML = "";
+    }
+    function secondclear() {
+      document.getElementById("bird").innerHTML = "";
+    }
+
+    let displayper = document.getElementById("percentage")
+    displayper.addEventListener('click', displaypercentage)
+
+    function displaypercentage() {
+      document.getElementById("result").innerHTML += "%"
+    }
+    let displaydiv = document.getElementById("divide")
+    displaydiv.addEventListener('click', displaydivide)
+
+    function displaydivide() {
+      document.getElementById("result").innerHTML += "/"
+    }
+
+    let displaymtply = document.getElementById("multiply")
+    displaymtply.addEventListener('click', displaymultiply)
+
+    function displaymultiply() {
+      document.getElementById("result").innerHTML += "X"
+    }
+    let displaysbrt = document.getElementById("subtraction")
+    displaysbrt.addEventListener('click', displaysubtract)
+
+    function displaysubtract() {
+      document.getElementById("result").innerHTML += "-"
+    }
+
+    let o = document.getElementById("add")
+    o.addEventListener('click', displayaddition)
+
+    function displayaddition() {
+      document.getElementById("result").innerHTML += "+"
+    }
+    let lo = document.getElementById("equal-to")
+    lo.addEventListener('click', alterresult)
+    function alterresult() {
+      document.getElementById("result").innerHTML = "";
+      let alterres = document.getElementById("bird")
+      let printres = alterres.innerHTML
+      document.getElementById("result").innerHTML += printres;
+      document.getElementById("bird").innerHTML = ""
+    }
+
+
+
+
+
+
+
+
+    let displayclrone = document.getElementById("clear-one-value")
+    displayclrone.addEventListener('click', displayclronevalue)
+    function displayclronevalue() {
+      let c = document.getElementById("result")
+    }
+
+
+
+    window.addEventListener("keyup", function (event) {
+      let rlt = event.key;
+      if (rlt == 1) {
+        displayone()
+      }
+      if (rlt == 2) {
+        displaytwo()
+      }
+      if (rlt == 3) {
+        displaythree()
+      }
+      if (rlt == 4) {
+        displayfour()
+      }
+      if (rlt == 5) {
+        displayfive()
+      }
+      if (rlt == 6) {
+        displaysix()
+      }
+      if (rlt == 7) {
+        displayseven()
+      }
+      if (rlt == 8) {
+        displayeight()
+      }
+      if (rlt == 9) {
+        displaynine()
+      }
+      if (rlt == '*') {
+        displaymultiply()
+      }
+      if (rlt == '/') {
+        displaydivide()
+      }
+      if (rlt == '-') {
+        displaysubtract()
+      }
+      if (rlt == '+') {
+        displayaddition()
+      }
+      if (rlt == 0) {
+        displayzero()
+      }
+      if (rlt == 'Backspace') {
+        clearone()
+      }
+      if (rlt == '=') {
+        alterresult()
+
+      }
+
+
+    }, true);
+
+    let displayequal = document.getElementById("subtraction")
+    displayequal.addEventListener('click', displayequal)
+
+    let z = document.getElementById("clear-one-value")
+    z.addEventListener('click', clearone)
+    function clearone() {
+      let a = document.getElementById("result")
+      let c = a.innerHTML
+
+      let w = c.length;
+      let rohit = c.slice(0, w - 1);
+      document.getElementById("result").innerHTML = rohit;
+      console.log(rohit.length)
+      let m = rohit.length
+      if (rohit[m - 1] == '+') {
+        document.getElementById("bird").innerHTML = ""
+      }
+      if (rohit[m - 1] == '-') {
+        document.getElementById("bird").innerHTML = ""
+      }
+      if (rohit[m - 1] == '*') {
+        document.getElementById("bird").innerHTML = ""
+      }
+      if (rohit[m - 1] == '/') {
+        document.getElementById("bird").innerHTML = ""
+      }
+      if (rohit[m - 1] == '%') {
+        document.getElementById("bird").innerHTML = ""
+      }
+
+      success();
+
+      if (rohit.length == 12) {
+        success()
+      }
+      //  if(rohit.length<=12)
+      //  {
+      //   document.getElementById("result").innerHTML=""
+      //  }
+    }
+
+    let a = document.getElementById("result")
+    let c = a.innerHTML
+
+    function success() {
+
+      let a = document.getElementById("result")
+      let c = a.innerHTML
+      let h = c;
+
+      // let len1=c.length;
+      // console.log(len1)
+
+      k = c.replace(/%/g, "/100*")
+      u = k.replace("X", "*")
+
+      let rslt = eval(u)
+      console.log(rslt)
+      document.getElementById("bird").innerHTML = rslt
+
+      tell()
+
+
+
+    }
+    function tell() {
+
+
+      let q = document.getElementById("result")
+      let p = q.innerHTML;
+      let l = p.length;
+      console.log(l)
+      if (l == 12) {
+
+        document.getElementById("bird").innerHTML = "";
+
+      }
+
+
+
+    }
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
